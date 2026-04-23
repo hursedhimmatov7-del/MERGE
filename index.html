@@ -53,10 +53,12 @@
         <p class="bg-[#9B6D44] w-full lg:pl-0 pl-5 lg:py-0 py-2">Контентная страница </p>
         <p class="bg-[#9B6D44] w-full lg:pl-0 pl-5 lg:py-0 py-2">Контентная страница 2</p>
     </nav>
-    <section class="w-[90%] lg:w-380 lg:my-0 my-10 m-auto lg:h-160 h-100 lg:bg-position-[0%] bg-position-[60%]  bg-[url('./sec1foto.png')] bg-cover bg-no-repeat flex items-center justify-around relative">
+    <section class="w-[90%] lg:w-380 lg:my-0 my-10 m-auto lg:h-160 h-100 lg:bg-position-[0%] bg-position-[60%]  bg-[url('./sec1foto.png')] bg-cover bg-no-repeat flex items-center justify-center relative">
         <img class="absolute bottom-5 right-[37%] lg:right-[45%] " src="src/dots.png" alt="">
-        <div class="text-white text-2xl lg:py-5 lg:text-[15px] p-5 rounded-[50%] bg-[#9B6D44]"><i class="fa-solid fa-angle-left"></i></div>
+       <div class="w-[70%] flex items-center justify-between">
+         <div class="text-white text-2xl lg:py-5 lg:text-[15px] p-5 rounded-[50%] bg-[#9B6D44]"><i class="fa-solid fa-angle-left"></i></div>
                 <div class="text-white text-2xl lg:py-5 lg:text-[15px] p-5 rounded-[50%] bg-[#9B6D44]"><i class="fa-solid fa-angle-right"></i></div>
+       </div>
     </section>
     <section class="lg:max-w-300 w-[90%] m-auto lg:mt-40 mt-10 flex flex-col items-start lg:gap-20 gap-10">
       <div class="flex items-start gap-10 text-white"> 
@@ -89,10 +91,62 @@
                   </div> 
                   <h1 class="text-[#9B6D44]">Восстановить пароль</h1>
                    <button class="w-full py-3 bg-[#9B6D44] rounded-2xl text-2xl">Отправить</button>
-                  
               </div>
          </div>
     </div>
+    </section>
+    <section class="lg:max-w-300 w-[90%] m-auto text-white lg:my-20 my-10 flex items-start justify-between lg:flex-row flex-col gap-y-10 flex-wrap ">
+        <div class="lg:w-[47%] w-full flex flex-col items-start gap-7">
+            <h1 class="lg:text-3xl text-2xl">элементы чекбоксов, радио <br> кнопок, выбор из списка</h1>
+            <div class="flex flex-col items-start gap-5">
+                 <div class="flex items-center gap-3 ">
+                    <input type="checkbox" id=""> Соглашаюсь на обратку персональных данных
+                   </div>
+                    <div class="flex items-center gap-3 ">
+                    <input type="checkbox" id=""> Соглашаюсь на обратку персональных данных
+                   </div>
+            </div>
+        </div>
+        <div class="lg:w-[50%] w-full flex flex-col gap-5 items-start">
+            <button class="w-full py-3 bg-[#9B6D44] rounded-2xl text-2xl">Отправить</button>
+           <button class="w-full py-3 bg-[#55371D] rounded-2xl text-2xl">Отмена</button>
+        </div>
+         <div class="lg:w-[50%] w-full flex flex-col gap-7">
+            <div class="w-full flex items-end justify-between">
+                <div class="flex items-center gap-3">
+                    <img src="src/circle.png" alt="">
+                    <h1>Радио-кнопка 1</h1>
+                </div>
+                <div class="lg:flex hidden flex-col items-start">
+                    <h1>Активная  <br>Радио-кнопка</h1>
+                    <i class="fa-solid fa-arrow-right-long lg:text-5xl"></i>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="inline-block p-2 rounded-[50%] border-6 border-[#9B6D44]"></div>
+                    <h1>Радио-кнопка 1</h1>
+                </div>
+            </div>
+              <div class="w-full flex items-end justify-between">
+                <div class="flex items-center gap-3">
+                    <img src="src/circle.png" alt="">
+                    <h1>Радио-кнопка 1</h1>
+                </div>
+                <div class="flex items-center gap-3">
+                  <img src="src/circle.png" alt="">
+                    <h1>Радио-кнопка 1</h1>
+                </div>
+            </div>
+                <div class="w-full flex items-end justify-between">
+                <div class="flex items-center gap-3">
+                    <img src="src/circle.png" alt="">
+                    <h1>Радио-кнопка 1</h1>
+                </div>
+                <div class="flex items-center gap-3">
+                  <img src="src/circle.png" alt="">
+                    <h1>Радио-кнопка 1</h1>
+                </div>
+            </div>
+         </div>
     </section>
 </body>
 </html>
