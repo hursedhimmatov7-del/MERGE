@@ -8,6 +8,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-400: oklch(70.4% 0.191 22.216);
+    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-2xl: 1.5rem;
@@ -274,11 +275,20 @@
   .w-70 {
     width: calc(var(--spacing) * 70);
   }
+  .w-\[40\%\] {
+    width: 40%;
+  }
   .w-\[50\%\] {
     width: 50%;
   }
+  .w-\[60\%\] {
+    width: 60%;
+  }
   .w-\[70\%\] {
     width: 70%;
+  }
+  .w-\[70\] {
+    width: 70;
   }
   .w-\[90\$\] {
     width: 90$;
@@ -453,6 +463,9 @@
   .bg-\[url\] {
     background-color: url;
   }
+  .bg-black {
+    background-color: var(--color-black);
+  }
   .bg-white {
     background-color: var(--color-white);
   }
@@ -501,6 +514,12 @@
   .p-\[5px_10px\] {
     padding: 5px 10px;
   }
+  .p-\[7px_10px\] {
+    padding: 7px 10px;
+  }
+  .p-\[7px_\] {
+    padding: 7px ;
+  }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
@@ -513,11 +532,17 @@
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
   }
+  .py-10 {
+    padding-block: calc(var(--spacing) * 10);
+  }
   .pr-5 {
     padding-right: calc(var(--spacing) * 5);
   }
   .pl-5 {
     padding-left: calc(var(--spacing) * 5);
+  }
+  .text-end {
+    text-align: end;
   }
   .text-2xl {
     font-size: var(--text-2xl);
@@ -534,6 +559,12 @@
   .text-5xl {
     font-size: var(--text-5xl);
     line-height: var(--tw-leading, var(--text-5xl--line-height));
+  }
+  .text-\[05px\] {
+    font-size: 05px;
+  }
+  .text-\[7px\] {
+    font-size: 7px;
   }
   .text-\[10px\] {
     font-size: 10px;
@@ -560,6 +591,12 @@
   }
   .text-\[\#9B6D44\] {
     color: #9B6D44;
+  }
+  .text-\[15pd\] {
+    color: 15pd;
+  }
+  .text-black {
+    color: var(--color-black);
   }
   .text-white {
     color: var(--color-white);
@@ -829,6 +866,11 @@
       width: 90%;
     }
   }
+  .lg\:w-\[100\%\] {
+    @media (width >= 64rem) {
+      width: 100%;
+    }
+  }
   .lg\:w-\[380\] {
     @media (width >= 64rem) {
       width: 380;
@@ -877,6 +919,11 @@
   .lg\:max-w-400 {
     @media (width >= 64rem) {
       max-width: calc(var(--spacing) * 400);
+    }
+  }
+  .lg\:max-w-\[380\] {
+    @media (width >= 64rem) {
+      max-width: 380;
     }
   }
   .lg\:max-w-\[1400px\] {
@@ -968,6 +1015,11 @@
   .lg\:py-5 {
     @media (width >= 64rem) {
       padding-block: calc(var(--spacing) * 5);
+    }
+  }
+  .lg\:py-20 {
+    @media (width >= 64rem) {
+      padding-block: calc(var(--spacing) * 20);
     }
   }
   .lg\:pl-0 {
