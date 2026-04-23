@@ -971,6 +971,12 @@
       gap: calc(var(--spacing) * 50);
     }
   }
+  .lg\:border-0 {
+    @media (width >= 64rem) {
+      border-style: var(--tw-border-style);
+      border-width: 0px;
+    }
+  }
   .lg\:border-l-5 {
     @media (width >= 64rem) {
       border-left-style: var(--tw-border-style);
